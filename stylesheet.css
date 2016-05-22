@@ -1,6 +1,6 @@
 header {
-    background-image: url(img/cloudes.jpg); /* Зображення шапки */
-   height: 70px; /* Висота шапки */
+   background: -moz-radial-gradient(center, ellipse cover, rgb(213,234,255), rgb(45,143,242));
+   height: 60px; /* Висота шапки */
    }
 button {
 border-radius: 5px;
@@ -21,6 +21,7 @@ input{
 #thed{
 	margin: auto;
 	width: 340px;
+	height: 20px;
 }
 #tweather{
 margin: auto;
@@ -29,6 +30,7 @@ width: 1200px;
 }
 #tcol1{
 background-color: rgb(213,234,255);
+border-color: rgb(213,234,255);
 }
 th{
 background-color: rgb(213,234,255);
