@@ -1,0 +1,42 @@
+header {
+    background-image: url(img/cloudes.jpg); /* Зображення шапки */
+   height: 70px; /* Висота шапки */
+   }
+button {
+border-radius: 5px;
+border: 1.5px solid blue;
+}
+section{
+	text-align: center;
+}
+h1{
+	color: rgb(0,102,204);
+}
+input{
+	width: 350px;
+	text-align: center;
+	font-size: 16px;
+	border: 1.5px solid blue;
+}
+#thed{
+	margin: auto;
+	width: 340px;
+}
+#tweather{
+margin: auto;
+border: 1px solid grey;
+width: 1200px;
+}
+#tcol1{
+background-color: rgb(213,234,255);
+}
+th{
+background-color: rgb(213,234,255);
+}
+tr{
+	height: 50px;
+}
+td{
+text-align: center;
+}
+
