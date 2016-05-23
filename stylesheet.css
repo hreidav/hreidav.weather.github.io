@@ -1,23 +1,33 @@
 header {
-   background: -moz-radial-gradient(center, ellipse cover, rgb(213,234,255), rgb(45,143,242));
+   background: -moz-radial-gradient(center, ellipse cover, rgb(182,243,243), rgb(39,222,222));
    height: 60px; /* Висота шапки */
+   border:  1.5px solid blue
    }
-button {
-border-radius: 5px;
-border: 1.5px solid blue;
-}
-section{
-	text-align: center;
-}
-h1{
-	color: rgb(0,102,204);
-}
 input{
 	width: 350px;
 	text-align: center;
 	font-size: 16px;
 	border: 1.5px solid blue;
 }
+#button_find {
+border-radius: 2px;
+border: 1.5px solid blue;
+width: 80px;
+color: blue;
+background: rgb(213,234,255);
+}
+section{
+	text-align: center;
+}
+h2{
+	color: rgb(0,102,204);
+}
+caption{
+font-size: 26px;
+font-style: strong;
+color: rgb(0,102,204);
+}
+
 #thed{
 	margin: auto;
 	width: 340px;
@@ -25,20 +35,22 @@ input{
 }
 #tweather{
 margin: auto;
-border: 1px solid grey;
+border: 1px solid blue;
 width: 1200px;
 }
-#tcol1{
-background-color: rgb(213,234,255);
-border-color: rgb(213,234,255);
+#tcol1{ /*стиль першого стобчика таблиці погоди */
+border-color: rgba(213,234,255,0.5);
+width: 200px;
 }
 th{
-background-color: rgb(213,234,255);
+background-color: rgba(213,234,255,0.8);
 }
 tr{
-	height: 50px;
+height: 50px;
 }
 td{
 text-align: center;
 }
-
+footer{
+	
+}

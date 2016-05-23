@@ -11,7 +11,7 @@
 <center>
     <table id="thed">
     	<tr>
-    		<td><a href="">Про сайт </a></td>
+    		<td><a href="about.html">Про сайт </a></td>
     		<td><a href="http://traditions.org.ua/usna-narodna-tvorchist/narodni-prykmety">Народні прикмети про погоду</a></td>
     	</tr>
     </table>
@@ -19,12 +19,14 @@
 </header>
 
 <section >
- <h1 align="center">Пошук населених пунктів</h1>
- <p align=center><input name="place" type="text" placeholder="Введіть назву населеного пункту"></p>
- <button>ПОШУК</button>
- <H3>Погода в ....</H3> 
+ <h2 align="center">Пошук населених пунктів</h2>
+ 
+ <input name="place" type="search" placeholder="Введіть назву населеного пункту">
+ <input id="button_find" type="submit" value="Пошук">
+  <H2></H2> 
 </section>
 <table id="tweather">
+<caption><strong>Погода в ....</strong></caption>
 	<thead> <!-- шапка таблиці погоди -->
 	  <tr>
 	 	<th></th>
@@ -82,7 +84,16 @@
 		 <td>hhh</td>
 		 <td>jjj</td>
 	</tr>
-	</tbody>
+		<tr> <!-- рядок вологості -->
+		 <td id="tcol1">Вологість, %</td>
+		 <td>sss</td>
+		 <td>ddd</td>
+		 <td>fff</td>
+		 <td>ggg</td>
+		 <td>hhh</td>
+		 <td>jjj</td>
+	</tr>
+</tbody>
 
 </table>
 
@@ -90,7 +101,7 @@
 
 <footer>
 </footer>
-<hr>
-© Грейда Василь, 2016</footer>
+<hr color="Blue">
+Copyright © Грейда Василь, 2016</footer>
 </body>
 </html>
