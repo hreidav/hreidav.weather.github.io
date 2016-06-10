@@ -1,111 +1,80 @@
 <!DOCTYPE html>
-<!-- saved from url=(0025)http://hreidav.github.io/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Weather</title>
-	
-	<link type="text/css" rel="stylesheet" href="stylesheet.css">
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Open Weather Map</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
 
 </head>
 <body>
 <header>
-    <a id="hed_a" href="http://hreidav.github.io/about.html">Про сайт   </a>
-    <a id="hed_a" href="http://traditions.org.ua/usna-narodna-tvorchist/narodni-prykmety"> Народні прикмети про погоду</a>
+    <nav>
+      <a id="hed_a" href="http://hreidav.github.io/about.html">Про сайт</a>
+      <a id="hed_a" href="http://traditions.org.ua/usna-narodna-tvorchist/narodni-prykmety"> Народні прикмети про погоду</a>
+    </nav>
 </header>
+	<form>
+		<label for="cityname" id="lab_frm">Введіть назву міста:</label>
+		<input type="text" placeholder="Введіть назву населеного пункту" id="cityname" size="20"/>
+		<input type="button" id="send" value="Шукати" />
+	</form>
+
+	<h2 id="city_h2">Погода в місті <span id="selectedcity"></span></h2>
+
+	<div id="tabs-container">
+    	<ul class="tabs-menu">
+        	<li class="current"><a href="#tab-1">Погода на сьогодні</a></li>
+        	<li><a href="#tab-2">Погода на 5 днів</a></li>
+    	</ul>
+	</div>
+     <div class="tab"> <!--Погода на поточну добу-->
+        <div id="tab-1" class="tab-content">
+        	<div id="weatherprop">
+        	    <p><b>Сьогодні </b></p><br>
+	        	<p><b>Хмарність та опади:</b></p><br>
+	        	<p><b>Температура повітря, &#8451;:</b></p>
+	        	<p><b>Атмосферний тиск, мм.рт.ст.:</b></p>
+	        	<p><b>Вологість повітря, %:</b></p>
+	        	<p><b>Швидкість вітру, м/с:</b></p>
+	        	<p><b>Схід сонця, год./хв.:</b></p>
+	        	<p><b>Захід сонця, год./хв.:</b></p>
+        	</div>
+        	<div id="weatherval">
+        		<p id="todays"></p>
+	        	<p id="clouddescr"></p>
+				<img id="cloudimg">
+				<p id="temp"></p>
+				<p id="pressure"></p>
+				<p id="humidity"></p>
+				<p id="windspeed"></p>
+				<p id="sunrise"></p>
+				<p id="sunset"></p>
+        	</div>
+        </div>
+        <div id="tab-2" class="tab-content"> <!--Погода на 5 діб-->
+            <div id="weatherprop">
+            	
+            	<p><b>Період доби, год.:</b></p><br>
+	        	<p><b>Хмарність та опади:</b></p><br>
+	        	<p><b>Температура повітря, &#8451;:</b></p>
+	        	<p><b>Атмосферний тиск, мм.рт.ст.:</b></p>
+	        	<p><b>Вологість повітря, %:</b></p>
+	        	<p><b>Швидкість вітру, м/с:</b></p><br>
+        	</div>
+        	
+        </div>
+    </div>
 
 
-
-<section>
-  <img id="img_sun" src="img/sun.gif"> <!--малюкнок сонця  зліва-->
-  <img id="img_cloud" src="img/cloud.gif"> <!--малюнок сонця  зправа-->
-  
-  <h2 align="center">Пошук населених пунктів</h2>
-  <input name="place" type="search" placeholder="Введіть назву населеного пункту">
-  <input id="button_find" type="submit" value="Пошук">
-
-</section>
-
-<table id="tweather"> <!--таблиця погоди -->
-<caption><strong>Погода в ....</strong></caption> <!-- заголовок таблиці погоди -->
-	<thead> <!-- шапка таблиці погоди -->
-	  <tr>
-	 	<th></th>
-	 	<th>day1</th>
-	 	<th>day2</th>
-	 	<th>day3</th>
-	 	<th>day4</th>
-	 	<th>day5</th>
-	 	<th>day6</th>
-	  </tr>
-	 </thead>
-	<tbody>
-	<tr> <!-- рядок місцевого часу -->
-	 <td id="tcol1">Місцевий час</td>
-		 <td>sss</td>
-		 <td>ddd</td>
-		 <td>fff</td>
-		 <td>ggg</td>
-		 <td>hhh</td>
-		 <td>jjj</td>
-	</tr>
-	<tr> <!-- рядок хмарності -->
-	 <td id="tcol1">Хмарність, %</td>
-		 <td>sss</td>
-		 <td>ddd</td>
-		 <td>fff</td>
-		 <td>ggg</td>
-		 <td>hhh</td>
-		 <td>jjj</td>
-	</tr>
-	<tr> <!-- рядок явищ погоди -->
-	 <td id="tcol1">Явища погоди</td>
-		 <td>sss</td>
-		 <td>ddd</td>
-		 <td>fff</td>
-		 <td>ggg</td>
-		 <td>hhh</td>
-		 <td>jjj</td>
-	</tr>
-	<tr> <!-- рядок температури -->
-	 <td id="tcol1">Температура</td>
-		 <td>sss</td>
-		 <td>ddd</td>
-		 <td>fff</td>
-		 <td>ggg</td>
-		 <td>hhh</td>
-		 <td>jjj</td>
-	</tr>
-	<tr> <!-- рядок тиску -->
-		 <td id="tcol1">Тиск, мм рт ст</td>
-		 <td>sss</td>
-		 <td>ddd</td>
-		 <td>fff</td>
-		 <td>ggg</td>
-		 <td>hhh</td>
-		 <td>jjj</td>
-	</tr>
-		<tr> <!-- рядок вологості -->
-		 <td id="tcol1">Вологість, %</td>
-		 <td>sss</td>
-		 <td>ddd</td>
-		 <td>fff</td>
-		 <td>ggg</td>
-		 <td>hhh</td>
-		 <td>jjj</td>
-	</tr>
-</tbody>
-
-</table>
-
-
-
-<footer>
-<a href="https://www.google.com.ua/maps">Шукати на мапі</a>
+<footer id="foot">
+<br>
+<a id="map" href="https://www.google.com.ua/maps">Шукати на мапі</a>
 <hr color="Blue">
 Copyright © Грейда Василь, 2016
 
 </footer>
-
-
-
-
-</body></html>
+</body>
+</html>

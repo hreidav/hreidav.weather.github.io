@@ -1,0 +1,183 @@
+header { /*шапка сайту*/
+   /*колір шапки "http://ilyakhasanov.ru/online-service/Gradient-generator/" */
+   background: rgb(54, 179, 255);
+   background: -webkit-linear-gradient(180deg, rgb(54, 179, 255) 46%, rgb(220, 239, 255) 81%);
+   background: -o-linear-gradient(180deg, rgb(54, 179, 255) 46%, rgb(220, 239, 255) 81%);
+   background: -ms-linear-gradient(180deg, rgb(54, 179, 255) 46%, rgb(220, 239, 255) 81%);
+   background: linear-gradient(180deg, rgb(54, 179, 255) 46%, rgb(220, 239, 255) 81%);
+   
+   height: 60px;/* Висота шапки */
+   width: 100%; /*ширина шапки*/
+   top: 1px;
+   left: 0px; 
+   border:  1.5px solid blue;
+   box-shadow: 0 0 20px rgba(0,5,0,0.5); /* Параметри тіні */
+   font-size: 20px;
+   text-align: center;
+   display: all;
+   }
+   #hed_a{
+    text-decoration: none;
+   }
+   
+   #hed_a:hover {
+    text-decoration: underline; /* підкреслення посилань шапки при наведенні курсора миші */
+    color: yellow; /* колір посилання при наведенні курсора */
+   }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+#lab_frm{
+    color: blue;
+    text-align: center;
+    font: italic bold;
+    font-size: 24px;    
+}
+@-webkit-keyframes pulsate {
+  50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
+@keyframes pulsate {
+  50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
+
+#city_h2 {
+    color: blue;
+    text-align: center;
+    text-shadow:5px 5px 10px blue;
+}
+
+/*колір шапки закладок*/
+#tabs-container {
+    height: 30px;
+    width: 100%;
+    border:  1.5px solid blue;
+    box-shadow: 0 0 20px rgba(0,5,0,0.5); /* Параметри тіні */
+       /*колір шапки "http://ilyakhasanov.ru/online-service/Gradient-generator/" */
+    background: rgb(58, 141, 255);
+    background: -webkit-linear-gradient(180deg, rgb(58, 141, 255) 8%, rgb(60, 236, 213) 75%);
+    background: -o-linear-gradient(180deg, rgb(58, 141, 255) 8%, rgb(60, 236, 213) 75%);
+    background: -ms-linear-gradient(180deg, rgb(58, 141, 255) 8%, rgb(60, 236, 213) 75%);
+    background: linear-gradient(180deg, rgb(58, 141, 255) 8%, rgb(60, 236, 213) 75%);
+    margin-top: 20px;
+}
+
+.tabs-menu {
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    clear: both;
+}
+
+.tabs-menu li {
+    line-height: 30px;
+    float: left;
+    border-right: 1.5px solid blue;
+    list-style: none;
+    color: yellow;
+}
+
+.tabs-menu li.current {
+    position: relative;
+    border-bottom: 1.5px solid blue;
+    height: 30px;
+}
+
+.tabs-menu li a {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tabs-menu .current a {
+    color: #2e7da3;
+}
+/*параметри всього контейнера погоди*/
+.tab {
+    width: 100%;
+    border-left: 1.5px solid blue;
+    border-right: 1.5px solid blue;
+    border-bottom: 1.5px solid blue;
+    float: left;
+    box-shadow: 0 0 20px rgba(0,5,0,0.5); /* Параметри тіні всього контейнера */
+}
+
+.tab-content {
+    padding: 5px;
+    display: none;
+}
+
+/*закладка погоди на сьогодні - повністю*/
+#tab-1 {
+    display: block;
+           /*колір фону "http://ilyakhasanov.ru/online-service/Gradient-generator/" */
+
+}
+
+#weatherprop, #weatherval {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    width: 250px;
+    color: blue;
+}
+/*лівий стовбець закладки 5 днів*/
+#weatherprop {
+    width: 250px;
+
+}
+
+/*таблиця з даними про погоду на 5 днів*/
+#weathervals {
+    display: inline-block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+/*рядок дати в таблиці на 5 днів*/
+#date {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    border: 1.5px solid blue;
+    /*фон рядка дати*/
+    background: -webkit-linear-gradient(180deg, rgb(54, 179, 255) 46%, rgb(220, 239, 255) 81%);
+    background: -o-linear-gradient(180deg, rgb(54, 179, 255) 46%, rgb(220, 239, 255) 81%);
+    background: -ms-linear-gradient(180deg, rgb(54, 179, 255) 46%, rgb(220, 239, 255) 81%);
+    background: linear-gradient(180deg, rgb(54, 179, 255) 46%, rgb(220, 239, 255) 81%);
+    /*background-color: rgb(54, 179, 255);; */
+}
+.time {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #ffffff;
+    font: italic bold;
+
+}
+#cityname{
+    text-align: center;
+    width: 250px;
+}
+form {
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: 15px;
+}
+
+#foot {
+/*position: relative;*/
+width: 100%;
+left: 0px;
+}
+
+#map {
+    font-size: 20px;
+}
