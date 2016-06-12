@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Open Weather Map</title>
+	<title>Просто погода</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="jquery-1.11.1.js"></script>
 	<script type="text/javascript" src="script.js"></script>
@@ -18,7 +18,7 @@
 </header>
 	<form>
 		<label for="cityname" id="lab_frm">Введіть назву міста:</label>
-		<input type="text" placeholder="Введіть назву населеного пункту" id="cityname" size="20"/>
+		<input type="text" placeholder="Введіть назву населеного пункту" id="cityname" size="22"/>
 		<input type="button" id="send" value="Шукати" />
 	</form>
 
@@ -26,8 +26,10 @@
 
 	<div id="tabs-container">
     	<ul class="tabs-menu">
-        	<li class="current"><a href="#tab-1">Погода на сьогодні</a></li>
+        	<!--закладки днів-->
+        	<li class="current"><a href="#tab-1">Погода на поточний момент</a></li>
         	<li><a href="#tab-2">Погода на 5 днів</a></li>
+        	<!--<li><a href="#tab-3">Погода на 5 днів</a></li>-->
     	</ul>
 	</div>
      <div class="tab"> <!--Погода на поточну добу-->
@@ -35,12 +37,13 @@
         	<div id="weatherprop">
         	    <p><b>Сьогодні </b></p><br>
 	        	<p><b>Хмарність та опади:</b></p><br>
-	        	<p><b>Температура повітря, &#8451;:</b></p>
-	        	<p><b>Атмосферний тиск, мм.рт.ст.:</b></p>
-	        	<p><b>Вологість повітря, %:</b></p>
-	        	<p><b>Швидкість вітру, м/с:</b></p>
-	        	<p><b>Схід сонця, год./хв.:</b></p>
-	        	<p><b>Захід сонця, год./хв.:</b></p>
+	        	<p><b>Температура повітря:</b></p>
+	        	<p><b>Атмосферний тиск:</b></p>
+	        	<p><b>Вологість повітря:</b></p>
+	        	<p><b>Швидкість вітру:</b></p>
+	        	<img id="girl" src="img/7.jpg">
+<!--	        	<p><b>Схід сонця:</b></p>
+	        	<p><b>Захід сонця:</b></p>-->
         	</div>
         	<div id="weatherval">
         		<p id="todays"></p>
@@ -50,8 +53,8 @@
 				<p id="pressure"></p>
 				<p id="humidity"></p>
 				<p id="windspeed"></p>
-				<p id="sunrise"></p>
-				<p id="sunset"></p>
+<!--				<p id="sunrise"></p>
+				<p id="sunset"></p>-->
         	</div>
         </div>
         <div id="tab-2" class="tab-content"> <!--Погода на 5 діб-->
@@ -71,9 +74,12 @@
 
 <footer id="foot">
 <br>
-<a id="map" href="https://www.google.com.ua/maps">Шукати на мапі</a>
+
+<!-- Minfin.com.ua nbu informer 100x42 yellow-->
+<div id="minfin-informer-m1Fn-nbu">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="100" height="42" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/nbu/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:100px;height:42px;ove'+'rflow:hidden;"></iframe>';var cl = 'minfin-informer-m1Fn-nbu';document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+<!-- Minfin.com.ua nbu informer 100x42 yellow-->
 <hr color="Blue">
-Copyright © Грейда Василь, 2016
+<a href="https://docs.google.com/document/d/1KUe4G1HBvbJwbYDQGp9QCzdnuFTWa8M9RP-um11CE0c/edit">Copyright © Грейда Василь, 2016</a>
 
 </footer>
 </body>
