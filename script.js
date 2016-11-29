@@ -48,7 +48,7 @@ $(function() {
                 if (data.weather[0].description==="few clouds") {data.weather[0].description="поодинокі хмари"; document.getElementById("weath_pict").src="img/few_clouds.jpg"};
                 if (data.weather[0].description==="light snow") {data.weather[0].description="слабкий сніг"; document.getElementById("weath_pict").src="img/light_snow.jpg"};
                 if (data.weather[0].description==="mist") {data.weather[0].description="туман"; document.getElementById("weath_pict").src="img/mist.jpg"};
-                if (data.weather[0].description==="fog") {data.weather[0].description="туманність"; document.getElementById("weath_pict").src="img/mist.jpg"};
+                if (data.weather[0].description==="fog") {data.weather[0].description="туман"; document.getElementById("weath_pict").src="img/mist.jpg"};
                 if (data.weather[0].description==="snow") {data.weather[0].description="сніг"; document.getElementById("weath_pict").src="img/snow.jpg"};  
                 return (data.weather[0].description);
                             				});
