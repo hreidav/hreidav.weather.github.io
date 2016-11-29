@@ -39,7 +39,7 @@ $(function() {
             }); 
 			/*погодні умови*/
 			$('#clouddescr').html(function() { /*переклад українською мовою*/
-				if (data.weather[0].description==="moderate rain") {data.weather[0].description="незначний дощ"; document.getElementById("weath_pict").src="img/moderate_rain.jpg"};
+		if (data.weather[0].description==="moderate rain") {data.weather[0].description="незначний дощ"; document.getElementById("weath_pict").src="img/moderate_rain.jpg"};
                 if (data.weather[0].description==="light rain") {data.weather[0].description="дрібний дощ"; document.getElementById("weath_pict").src="img/light_rain.jpg"};
                 if (data.weather[0].description==="clear sky") {data.weather[0].description="чисте небо"; document.getElementById("weath_pict").src="img/clear_sky.jpg"};
                 if (data.weather[0].description==="broken clouds") {data.weather[0].description="купчасті хмари"; document.getElementById("weath_pict").src="img/broken_clouds.jpg"};
@@ -48,6 +48,7 @@ $(function() {
                 if (data.weather[0].description==="few clouds") {data.weather[0].description="поодинокі хмари"; document.getElementById("weath_pict").src="img/few_clouds.jpg"};
                 if (data.weather[0].description==="light snow") {data.weather[0].description="слабкий сніг"; document.getElementById("weath_pict").src="img/light_snow.jpg"};
                 if (data.weather[0].description==="mist") {data.weather[0].description="туман"; document.getElementById("weath_pict").src="img/mist.jpg"};
+                if (data.weather[0].description==="fog") {data.weather[0].description="туман"; document.getElementById("weath_pict").src="img/mist.jpg"};
                 if (data.weather[0].description==="snow") {data.weather[0].description="сніг"; document.getElementById("weath_pict").src="img/snow.jpg"};  
                 return (data.weather[0].description);
                             				});
