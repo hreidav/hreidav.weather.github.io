@@ -42,7 +42,7 @@ $(function() {
 				if (data.weather[0].description==="moderate rain") {data.weather[0].description="незначний дощ"; document.getElementById("weath_pict").src="img/moderate_rain.jpg"};
                 if (data.weather[0].description==="light rain") {data.weather[0].description="дрібний дощ"; document.getElementById("weath_pict").src="img/light_rain.jpg"};
                 if (data.weather[0].description==="clear sky") {data.weather[0].description="чисте небо"; document.getElementById("weath_pict").src="img/clear_sky.jpg"};
-                if (data.weather[0].description==="broken clouds") {data.weather[0].description="купчасті хмари"; document.getElementById("few_clouds").src="img/broken_clouds.jpg"};
+                if (data.weather[0].description==="broken clouds") {data.weather[0].description="купчасті хмари"; document.getElementById("weath_pict").src="img/broken_clouds.jpg"};
                 if (data.weather[0].description==="overcast clouds") {data.weather[0].description="густі хмари"; document.getElementById("weath_pict").src="img/overcast_clouds.jpg"};
                 if (data.weather[0].description==="scattered clouds") {data.weather[0].description="незначна хмарність"; document.getElementById("weath_pict").src="img/scattered_clouds.jpg"};
                 if (data.weather[0].description==="few clouds") {data.weather[0].description="поодинокі хмари"; document.getElementById("weath_pict").src="img/few_clouds.jpg"};
