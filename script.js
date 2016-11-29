@@ -45,7 +45,10 @@ $(function() {
                 if (data.weather[0].description==="broken clouds") {data.weather[0].description="купчасті хмари"; document.getElementById("few_clouds").src="img/broken_clouds.jpg"};
                 if (data.weather[0].description==="overcast clouds") {data.weather[0].description="густі хмари"; document.getElementById("weath_pict").src="img/overcast_clouds.jpg"};
                 if (data.weather[0].description==="scattered clouds") {data.weather[0].description="незначна хмарність"; document.getElementById("weath_pict").src="img/scattered_clouds.jpg"};
-                if (data.weather[0].description==="few clouds") {data.weather[0].description="поодинокі хмари"; document.getElementById("few_clouds").src="img/few_clouds.jpg"};                
+                if (data.weather[0].description==="few clouds") {data.weather[0].description="поодинокі хмари"; document.getElementById("weath_pict").src="img/few_clouds.jpg"};
+                if (data.weather[0].description==="light snow") {data.weather[0].description="слабкий сніг"; document.getElementById("weath_pict").src="img/light_snow.jpg"};
+                if (data.weather[0].description==="mist") {data.weather[0].description="туман"; document.getElementById("weath_pict").src="img/mist.jpg"};
+                if (data.weather[0].description==="snow") {data.weather[0].description="сніг"; document.getElementById("weath_pict").src="img/snow.jpg"};  
                 return (data.weather[0].description);
                             				});
 				
